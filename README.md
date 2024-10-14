@@ -14,7 +14,7 @@ Download a binary from [Releases](https://github.com/k0kubun/xremap/releases).
 If it doesn't work, please [install Rust](https://doc.rust-lang.org/cargo/getting-started/installation.html)
 and run one of the following commands:
 
-```bash
+```yml
 cargo install xremap --features x11     # X11
 cargo install xremap --features gnome   # GNOME Wayland
 cargo install xremap --features kde     # KDE-Plasma Wayland
@@ -60,7 +60,7 @@ cat /proc/bus/input/devices
 
 Look for the section that contains your keyboard's name. Here’s an example output:
 
-```
+```yml
 I: Bus=0003 Vendor=046d Product=c339 Version=0111
 N: Name="Logitech G Pro Gaming Keyboard"
 P: Phys=usb-0000:00:14.0-3/input0
