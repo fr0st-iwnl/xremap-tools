@@ -1,4 +1,4 @@
-# xremap-tools
+# ⚙️ | xremap-tools
 
 A Bash script for managing custom key bindings on Linux systems. Unlike **xremap**, which requires the terminal to stay open, this script allows your key remappings to run in the background, ensuring they remain active even after closing the terminal.
 
