@@ -47,6 +47,9 @@ touch ~/.config/xremap/config.yml
 For more information on **configuring xremap**, visit the official [xremap GitHub repository](https://github.com/xremap/xremap?tab=readme-ov-file#configuration). You can also find my configuration file in the config folder of this repository.
 
 
+---
+
+
 ## How to Locate Your Keyboard
 
 To find the event number for your keyboard, run the following command in your terminal:
@@ -58,19 +61,19 @@ cat /proc/bus/input/devices
 Look for the section that contains your keyboard's name. Here’s an example output:
 
 ```
-I: Bus=0003 Vendor=260d Product=0009 Version=0110
-N: Name="HOLTEK A87 Gaming Keyboard"
-P: Phys=usb-0000:09:00.3-2/input0
-S: Sysfs=/devices/pci0000:00/0000:00:08.1/0000:09:00.3/usb3/3-2/3-2:1.0/0003:260D:0009.0005/input/input13
+I: Bus=0003 Vendor=046d Product=c339 Version=0111
+N: Name="Logitech G Pro Gaming Keyboard"
+P: Phys=usb-0000:00:14.0-3/input0
+S: Sysfs=/devices/pci0000:00/0000:00:14.0/usb2/2-3/2-3:1.0/0003:046D:C339.0006/input/input20
 U: Uniq=
-H: Handlers=sysrq kbd leds event13 
+H: Handlers=sysrq kbd leds event20 
 B: PROP=0
 B: EV=120013
 B: KEY=1000000000007 ff9f207ac14057ff febeffdfffefffff fffffffffffffffe
 B: MSC=10
 ```
 
-In this example, the event number for the keyboard is event13. All you need to do is copy the name of your keyboard (e.g., HOLTEK A87 Gaming Keyboard) and put it in the script. For the next steps, refer to [Installation for xremap-tool](#installation-for-xremap-tool)
+In this example, the event number for the keyboard is event20. All you need to do is copy the name of your keyboard (e.g., Logitech G Pro Gaming Keyboard) and put it in the script. For the next steps, refer to [Installation for xremap-tool](#installation-for-xremap-tool)
 
 
 ## Installation for xremap-tool
@@ -87,7 +90,7 @@ To use this script, follow these steps:
    ```bash
    vim ~/path/to/toggle_xremap.sh 
    ```
-    - Replace **DEVICE_NAME=**`"HOLTEK A87 Gaming Keyboard"` with the actual name of your keyboard.
+    - Replace **DEVICE_NAME=**`"Logitech G Pro Gaming Keyboard"` with the actual name of your keyboard.
 
 3. **Make the Script Executable**: Change the permissions of the script to make it executable.
    ```bash
@@ -132,6 +135,8 @@ If you'd like to run the script from anywhere, follow these steps to create a cu
    ```bash
    source ~/.zshrc
    ```
+
+---
 
 ## TO DO
 
