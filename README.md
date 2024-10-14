@@ -44,7 +44,7 @@ mkdir -p ~/.config/xremap
 touch ~/.config/xremap/config.yml
 ```
 
-For more information on configuring xremap, visit the official [xremap GitHub repository](https://github.com/xremap/xremap). You can also find my configuration file in the config folder of this repository.
+For more information on **configuring xremap**, visit the official [xremap GitHub repository](https://github.com/xremap/xremap?tab=readme-ov-file#configuration). You can also find my configuration file in the config folder of this repository.
 
 
 ## How to Locate Your Keyboard
